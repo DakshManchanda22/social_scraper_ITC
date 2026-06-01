@@ -13,8 +13,8 @@ def get_required(key: str) -> str:
 
 APIFY_API_TOKEN = lambda: get_required("APIFY_API_TOKEN")
 ANTHROPIC_API_KEY = lambda: get_required("ANTHROPIC_API_KEY")
-GMAIL_SENDER_EMAIL = lambda: get_required("class.notes716@gmail.com")
-GMAIL_APP_PASSWORD = lambda: get_required("REDACTED_PASSWORD")
+GMAIL_SENDER_EMAIL = lambda: get_required("GMAIL_SENDER_EMAIL")
+GMAIL_APP_PASSWORD = lambda: get_required("GMAIL_APP_PASSWORD")
 
 RECIPIENT_EMAILS = lambda: [
     e.strip() for e in get_required("RECIPIENT_EMAILS").split(",") if e.strip()
